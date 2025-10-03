@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GalaxyStore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #b2b0b8;
+      }
+      .product-img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .badge-custom {
+        background-color: #4b3b43;
+      }
+      footer {
+        background-color: #9d85c5;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+       
+      .navbar-dark {
+        background-color: #291f3d !important;
+      }
+      .btn-primary {
+        background-color: #690433;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #d63384;
+      }
+        header.bg-primary {
+            background-color: #b2b0b8 !important;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#">Bloom & Glow</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+      <div class="container">
+          <h1>Where Beauty is Always in Full Bloom.</h1>
+        <p>Exclusive makeup at stellar prices</p>
+      </div>
+    </header>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top product-img"
+              alt="Product"
+            />
+            <div class="card-body">
+              <span class="badge badge-custom mb-2">New</span>
+              <h5 class="card-title">mascara</h5>
+              <p class="card-text">$1050.00</p>
+              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="https://f.nooncdn.com/p/v1658756066/N24089097A_10.jpg?width=800" class="card-img-top product-img" alt="Product" />
+            <div class="card-body">
+              <span class="badge badge-custom mb-2">New</span>
+              <h5 class="card-title">Lipstick</h5>
+              <p class="card-text">$1299.00</p>
+              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="https://f.nooncdn.com/p/pnsku/N11073356A/45/_/1749919452/5ebaa0ae-8cd0-46cd-890c-3bb8af9091ff.jpg?width=800" class="card-img-top product-img" alt="Product" />
+            <div class="card-body">
+              <span class="badge badge-custom mb-2">New</span>
+              <h5 class="card-title">Foundation</h5>
+              <p class="card-text">$875.00</p>
+              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="https://www.roseinc.com/cdn/shop/articles/header_a8206589-de8a-4098-bede-f08f8d12c155_2880x.jpg?v=1660574568" class="card-img-top product-img" alt="Product" />
+            <div class="card-body">
+              <span class="badge badge-custom mb-2">New</span>
+              <h5 class="card-title">Concealer</h5>
+              <p class="card-text">$750.00</p>
+              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 GalaxyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
